@@ -8,11 +8,13 @@
  * sumListener(); // Binds the sumHandler function to the button's click event
  */
 
-import dom from '../dom.js';
-import sumHandler from '../handlers/sumHandler.js';
+// import dom from '../dom.js';
+import proInput from '../handlers/proInput.js';
 
-const sumListener = () => {
-    dom.btn.addEventListener('click', sumHandler);
+const userInput = () => {
+    for (let i = 0; i < 9; i++) {
+        document.querySelector(`.box${i}`).addEventListener('click', proInput);
+    }
 };
 
-export default sumListener;
+export default userInput;

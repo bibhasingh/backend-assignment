@@ -1,5 +1,5 @@
 // import your listeners(events)
 
-import sumListener from './events/sumListener.js';
+import userInput from './events/userInput.js';
 
-sumListener();
+userInput();

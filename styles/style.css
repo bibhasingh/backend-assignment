@@ -5,46 +5,48 @@ body {
     padding: 0;
 }
 
-.calculator-container {
-    width: 300px;
-    margin: 100px auto;
-    padding: 20px;
-    background-color: #fff;
-    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.1);
+.container {
+    width: 700px;
+    height: 700px;
+    margin: auto;
+    background-color: rgb(118, 219, 143);
+}
+
+.heading {
     text-align: center;
+    padding: 20px;
+    background-color: rgb(11, 137, 159);
 }
 
-.input-container {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 15px;
+.boxContainer {
+    display: grid;
+    grid-template-columns: 100px 100px 100px;
+    margin-left: 30%;
+    margin-top: 60px;
 }
 
-.input-number {
-    width: 45%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    outline: none;
+.box {
+    border: solid;
+    height: 100px;
+    width: 100px;
+    background-color: rgb(11, 137, 159);
 }
 
-.sum-button {
-    background-color: #4caf50;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
-    outline: none;
+.player {
+    margin-left: 80px;
+    margin-right: 80px;
+    margin-top: 40px;
+    text-align: center;
+    background-color: rgb(230, 219, 6);
 }
 
-.sum-button:hover {
-    background-color: #45a049;
-}
-
-.output {
-    margin-top: 15px;
-    font-size: 18px;
+.btn {
+    margin-left: 45%;
+    margin-top: 50px;
+    height: 50px;
+    width: 100px;
+    background-color: rgb(210, 156, 62);
+    text-align: center;
+    font-size: large;
     font-weight: bold;
 }

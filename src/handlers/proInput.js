@@ -15,14 +15,14 @@
 // import sum from '../utils/sum.js';
 // import createSum from '../components/createSum.js';
 // import updateSum from '../components/updateSum.js';
-import markInput from '../components/markInput.js';
+import handleInput from '../components/handleInput.js';
 
 const proInput = (e) => {
     const box = e.target.className;
     const boxNumber = box.split(' ')[1].split('x')[1];
     //console.log(boxNumber);
     // console.log(boxArr[boxNumber]);
-    markInput(boxNumber);
+    handleInput(boxNumber);
 };
 
 export default proInput;

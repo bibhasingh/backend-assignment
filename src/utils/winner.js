@@ -44,7 +44,18 @@ const winner = (boxArr, currentPlayer, winGame) => {
         winGame = 1;
         document.querySelector('.player').textContent = `Player ${
             currentPlayer + 1
-        } won`;
+        } won 🎉 `;
+        const el = document.getElementsByClassName('box');
+        for (let i = 0; i < el.length; i++) {
+            el[i].style.backgroundColor = 'rgb(230, 219, 6)';
+        }
+    } else if (boxArr.every((item) => item !== 0)) {
+        winGame = 1;
+        document.querySelector('.player').textContent = 'Game Draw 💥';
+        const el = document.getElementsByClassName('box');
+        for (let i = 0; i < el.length; i++) {
+            el[i].style.backgroundColor = 'gray';
+        }
     }
     return winGame;
 };
